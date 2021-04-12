@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+html {
+    font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.search-input:focus {
+    border-bottom: 0.1rem solid white !important;
+  box-shadow: 0 0.1rem 0 0 white !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.material-icons:hover {
+    cursor: pointer;
+}
+.col{
+    margin-top: 0rem;
+}
+.card{
+    margin-top: 4rem;
+    width: 100rem;
+    height: 25rem;
+    margin-left: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heading{
+    font-size: 3.5rem;
+    text-align: center;
+    color: tomato;
 }
 
-.App-link {
-  color: #61dafb;
+.likebtn{
+    font-size: 2rem;
+   margin-right: 1rem;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dislikebtn{
+    font-size: 2rem;
+   margin-right: 1rem;
 }
+
+.viewpost{
+    font-size: 2rem;
+}
+
+.heading1{
+    font-size: 3.5rem;
+    text-align: center;
+    color: tomato;
+    margin-bottom: 2rem;
+}
+
+.createbtn{
+    font-size: 1.5rem;
+    margin-left: 18rem;
+}
+
+
+
+  

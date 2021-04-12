@@ -3,10 +3,29 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from 'react-router-dom';
+import axios from 'axios';
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
+import Reducer from './Redux/Reducer';
+
+const store = createStore(Reducer, applyMiddleware(thunk));
+
+const option = {
+  baseURL: "https://jsonplaceholder.typicode.com",
+  headers: { 'content-type': 'application/x-www-form-urlencoded' }
+}
+
+export const instance = axios.create(option);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
